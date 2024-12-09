@@ -1,0 +1,44 @@
+.bg-body-tertiary {
+  padding: 0;
+}
+
+.container-fluid {
+  background-color: #EADDCA;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.logo {
+  height: 100px; 
+  width: auto;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  height: 14vh;
+  align-items: center;
+}
+
+.navbar-nav a {
+  margin-right: 30px; 
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.navbar-nav a:hover {
+  transform: scale(1.1); /* Scales the box by 10% */
+  background-color: #d5c2a6;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-toggler {
+  border: none; /* Customize toggle button for mobile */
+}
+
+.container-fluid h4 {
+  margin-left: 8px;
+}

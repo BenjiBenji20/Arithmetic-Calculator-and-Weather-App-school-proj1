@@ -1,0 +1,101 @@
+.default-cover {
+  background-image: url('/images/background.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding-left: 100px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  min-height: 100vh;
+  background-color: rgb(143, 143, 143);
+  background-blend-mode: multiply ;
+}
+
+.left-part-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  color: white;
+  width: 40%;
+  margin-left: 50px;
+}
+
+.left-part-description h2 {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.left-part-description p {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.default-cover .right-part-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: -100px;
+  margin-right: 55px;
+}
+
+.default-cover .right-part-image img {
+  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  width: 20rem;
+  height: 30rem;
+}
+
+#calculator-img {
+  position: relative;
+  top: 40px;
+  right: 100px;
+} 
+
+
+
+/** NEXT COVER PAGE */
+.next-cover {
+  background-image: url('/images/background.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 20px; 
+  padding-left: 100px;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  min-height: 100vh;
+  background-color: rgb(143, 143, 143);
+  background-blend-mode: multiply;
+}
+
+.next-cover .left-part-description {
+  width: 52%;
+}
+
+.profile-btn {
+  margin-left: 50px;
+}
+
+#profile-img {
+  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 20rem;
+  height: 30rem;
+  position: relative;
+  right: 140px;
+  bottom: 50px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.17);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.8px);
+  -webkit-backdrop-filter: blur(3.8px);
+  border: none;
+}
+
+
+

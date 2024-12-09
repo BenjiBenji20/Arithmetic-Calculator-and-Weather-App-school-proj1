@@ -1,0 +1,123 @@
+#weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  margin-top: 8vh;
+  margin-bottom: 20vh;
+  position: relative;
+  left: 35vw;
+  background-color: #c7b198;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid #f4e391;
+  text-align: center;
+}
+h2, label, p {
+  margin: 8px 0;
+} 
+
+h2 {
+  font-weight: 700;
+}
+
+input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px; 
+  padding: 15px; 
+  font-size: 18px; 
+  border: 1px solid #f4e391; 
+  border-radius: 5px;
+  cursor: pointer; 
+  background-color: #dfd3c3;
+  color: #5C4033;
+  font-weight: 700;
+  width: 100px; 
+  transition: background-color 0.3s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #f4e391; /* Change background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  transform: scale(1.05); /* Slightly increase the size */
+}
+
+#temp-div p {
+  font-size: 40px;
+  margin-top: -30px;
+}
+
+#weather-info {
+  font-size: 20px;
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+  margin-bottom: 0;
+  display: none; /* To hide the icon and later shown using JS*/
+}
+
+#hourly-forecast {
+  margin-top: 15px;
+  overflow-x: auto; /* Enables horizontal scroll */
+  white-space: nowrap; /* Prevents wrapping of items */
+  display: flex;
+  justify-content: flex-start; 
+  width: 100%; 
+}
+
+.hourly-item {
+  flex: 0 0 auto;
+  width: 80px; /* Ensure each forecast item has a consistent width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  color: #5C4033;
+}
+
+
+.hourly-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+#hourly-heading {
+  color: #5C4033;
+  margin-top: 10px;
+}
+
+#hourly-forecast::-webkit-scrollbar {
+  width: 50px;
+}
+
+#hourly-forecast::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+#hourly-forecast::-webkit-scrollbar-thumb {
+  background: #5C4033; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#hourly-forecast::-webkit-scrollbar-thumb:hover {
+  background: #4b3429; 
+}

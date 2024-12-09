@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <!--Page Icon-->
+    <link rel="Icon" href="/images/header-logo.png" type="image/png">
+    <!--API Links-->
+    <!--Bootstrap Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/calculator.css">
+  </head>
+  <body>
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
+          <div class="container-fluid">
+            <img src="/images/header-logo.png" alt="Loading logo" class="logo">
+            <h4>Monterde | Canones</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="/homepage">Home</a>
+                <a class="nav-link" href="/profile">Profile</a>
+                <a class="nav-link active" href="/arithmetic-calc">Arithmetic Calculator</a>
+                <a class="nav-link" href="/weather-app">Weather App</a>
+                <a class="nav-link" href="/music-app">Music App</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        
+
+        <div class="calculator_container">
+          <p>CASIO</p>
+          <div class="result_container">
+            <h2><input type="text" id="result" value="<%= display %>" readonly /></h2>
+          </div>
+          <div class="form_container">
+              <form action="/arithmetic-calc" method="POST">
+
+                <!-- Hidden input to pass the current display value -->
+                <input type="hidden" name="display" value="<%= display %>">
+                <div class="bttn_first_row">
+                  <button type="submit" name="button" value="7">7</button>
+                  <button type="submit" name="button" value="8">8</button>
+                  <button type="submit" name="button" value="9">9</button>
+                  <button type="submit" name="button" value="(">(</button>
+                </div>
+
+                <div class="bttn_second_row">
+                  <button type="submit" name="button" value="4">4</button>
+                  <button type="submit" name="button" value="5">5</button>
+                  <button type="submit" name="button" value="6">6</button>
+                  <button type="submit" name="button" value=")">)</button>
+                </div>
+
+                <div class="bttn_third_row">
+                  <button type="submit" name="button" value="1">1</button>
+                  <button type="submit" name="button" value="2">2</button>
+                  <button type="submit" name="button" value="3">3</button>
+                  <button type="submit" name="button" value="*">x</button>
+                </div>
+
+                <div class="bttn_fourth_row">
+                  <button type="submit" name="button" value=".">.</button>
+                  <button type="submit" name="button" value="0">0</button>
+                  <button type="submit" name="button" value="-">-</button>
+                  <button type="submit" name="button" value="/">/</button>
+                </div>
+                
+                <div class="bttn_fifth_row">
+                  <button type="submit" name="button" value="C" id="clear">C</button>
+                  <button type="submit" name="button" value="%">Av</button>
+                  <button type="submit" name="button" value="+">+</button>
+                  <button type="submit" name="button" value="=">=</button>
+                </div>
+              </form>
+          </div>
+        </div>
+
+        <div class="right-par-container">
+          <h3>"The essence of mathematics lies in its freedom. Mathematics knows no races or geographic boundaries; for mathematics, the cultural world is one country. Like a tree which has grown, in the course of centuries, from a small seed into an all-covering, luxuriant, manifoldly branching foliage, so it has grown through thousands of years of thought by individuals of all races and countries."
+            <br>— David Hilbert</h3>
+        </div>
+      </main>
+ 
+      <!-- Footer -->
+      <footer class="text-center text-white" style="background-color: #212529">
+        <!-- Grid container -->
+        <div class="container">
+          <!-- Section: Links -->
+          <section class="mt-5">
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5">
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="/homepage" class="text-white"  >Home</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="/profile" class="text-white"  >Profile</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="/arithmetic-calc" class="text-white"  >Arithmetic Calculator</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="/weather-app" class="text-white"  >Weather App</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="/music-app" class="text-white"  >Music App</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row-->
+          </section>
+          <!-- Section: Links -->
+
+          <hr class="my-5" />
+
+          <!-- Section: Text -->
+          <section class="mb-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8">
+                <p>
+                  This application was created by Benji Canones & Vanessa Joyce Monterde with the guidance of Dr. Enrico Chavez. The application was created for the project fulfillment in System Integration and Architecture.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Section: Text -->
+
+          <!-- Section: Social -->
+          <section class="text-center mb-5">
+            <a href="https://www.facebook.com/benji.imperial" class="text-white me-4">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://github.com/BenjiBenji20" class="text-white me-4">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vanessa-joyce-monterde-4443b82b2/" class="text-white me-4">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/vaneeeezza//" class="text-white me-4">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </section>
+          <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/"
+              >MDBootstrap.com</a>
+            | 2024 Benji Canones & Vanessa Joyce Monterde
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

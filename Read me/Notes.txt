@@ -1,0 +1,20 @@
+Port Number: 3001
+Server Name: sia-projects
+Technology Used: 
+	Front: HTML(EJS), CSS, JS, Bootstrap(Framework)
+	Back: JS, NodeJS(Express JS Framework) for Server side and API's data fetching 
+*All files in views folder are EJS file and will be render into HTML by ExpressJS in routes 
+
+
+Arithmetic Calculator
+Technology Used: 
+	Front: HTML(EJS), CSS, JS, Bootstrap(Framework)
+	Back: JS, NodeJS(Express JS Framework)
+ 
+
+
+Weather App
+Technology Used: 
+	Front: HTML(EJS), CSS, JS, Bootstrap(Framework)
+	Back: JS, NodeJS(Express JS Framework), API
+API from OpenWeatherMap.org
